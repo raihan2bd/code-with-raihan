@@ -1,0 +1,176 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: 'Lato', sans-serif;
+  background: #d3d3d3;
+}
+
+a {
+  text-decoration: none;
+}
+
+.dn {
+  display: none;
+}
+
+.df {
+  display: flex !important;
+}
+
+.db {
+  display: block;
+}
+
+.dib {
+  display: inline-block;
+}
+
+.header {
+  left: 0;
+  top: 0;
+  display: flex;
+  position: fixed;
+  min-height: 70px;
+  align-items: center;
+  width: 100%;
+  align-items: center;
+  padding: 0 20px;
+  justify-content: center;
+  box-shadow: 0px 3px 5px rgba(155, 155, 155, 0.3);
+}
+
+
+/* Navigation Bar */
+.navbar {
+  width: 100%;
+  max-width: 880px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.brand {
+  padding-left: 25px;
+}
+
+.menu-icon {
+  color: #272a31;
+  width: 25px;
+  height: 25px;
+  align-self: center;
+  cursor: pointer;
+}
+
+.menu-icon img {
+  width: 100%;
+  height: 100%;
+}
+
+.nav-item-group {
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+.d-nav {
+  display: none;
+}
+
+.m-nav {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  min-height: 100vh;
+  position: absolute;
+  background: #fff;
+  flex-direction: column;
+  background: rgba(236, 82, 66, 0.4);
+  align-items: flex-start;
+  padding: 25px;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+
+.m-nav.nav-item-group {
+  padding-top: 35px;
+  font-weight: bold;
+}
+
+.nav-link {
+  width: 100%;
+  display: block;
+  margin: 10px;
+  color: #fff;
+  font-size: 20px;
+  padding: 10px;
+  transition: color 0.1s ease-in-out;
+}
+
+.nav-link:hover {
+  color: #ec5242;
+}
+
+.nav-link:active {
+  color: #d3d3d3;
+}
+
+.nav-box {
+  border: 3px solid #ec5242;
+  font-weight: bold;
+  color: #ec5242 !important;
+}
+
+.nav-box:hover {
+  background: #ec5242;
+  color: #fff !important;
+}
+
+.nav-box:active {
+  color: #ec5242 !important;
+  background: #fff !important;
+}
+
+.cross-icon {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  cursor: pointer;
+}
+
+/* End of navigation bar */
+
+.container {
+  margin-top: 70px;
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    background: #fff;
+  }
+  .navbar {
+    justify-content: space-between;
+  }
+  .m-nav {
+    display: none;
+  }
+  .d-nav {
+    display: flex;
+  }
+  .menu-icon {
+    display: none;
+  }
+
+  .nav-link {
+    font-size: 1rem;
+    margin: 0 10px;
+    padding: 8px;
+    color: #272a31;
+    font-weight: normal;
+  }
+}
