@@ -41,6 +41,7 @@ a {
   min-height: 70px;
   align-items: center;
   width: 100%;
+  z-index: 100;
   align-items: center;
   padding: 0 20px;
   justify-content: center;
@@ -201,7 +202,8 @@ a {
 
 .btn-join {
   border: 3px solid #ec5242;
-  color: #ec5242;
+  background: #ec5242;
+  color: #fff;
   font-size: 1.2rem;
   font-weight: bold;
   max-width: 300px;
@@ -214,6 +216,97 @@ a {
   border-radius: 10px;
   color: #fff;
   background: #ec5242; 
+}
+
+.btn-join:active {
+  background: #d6d6d6;
+  color: #ec5242;
+}
+
+/* Program Section */
+.program {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../images/program.png");
+}
+
+.program-title {
+  margin: 35px;
+  padding: 15px;
+  color: #fff;
+}
+
+.program-title::after {
+  content: '';
+  border-bottom: 3px solid #ec5242;
+  display: block;
+  padding-bottom: 10px;
+  margin: 0 auto;
+  width: 90px;
+}
+
+.program-group {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+  list-style: none;
+}
+
+.program-item {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 2px solid transparent;
+  transition: all 0.3s ease-in-out;
+  margin: 0 15px;
+}
+
+.program-item:hover {
+  transform: translateY(-3px);
+  border-color: #fff;
+}
+
+.program-img {
+  align-self: center;
+  margin: 10px 0;
+  width: 40px;
+}
+
+.program-img img {
+  width: 100%;
+}
+
+.program-name {
+  color: #ec5242;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 10px 0;
+  width: 40%;
+  align-self: center;
+  overflow: wrap;
+}
+
+.program-details {
+  color: #fff;
+  text-align:left;
+  width: 50%;
+  align-self: center;
+  font-size: 14px;
+}
+
+.btn-program {
+  text-decoration: underline;
+  color: #fff;
+  background: initial;
+  border: none;
+  margin: 35px 0;
 }
 
 @media screen and (min-width: 768px) {
@@ -248,11 +341,34 @@ a {
 
   /* Hero Section */
   .hero {
-    padding: 50px;
+    padding: 70px 50px;
+
   }
 
   .hero-title {
     font-size: 4rem;
     margin-bottom: 50px;
+  }
+
+  /* Program Section */
+  .program-group {
+    display: flex;
+    flex-direction: row;
+    gap: 3px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .program-item {
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .program-name {
+    width: 100%;
+  }
+  .program-details {
+    width: 100%;
+    text-align: center;
   }
 }
