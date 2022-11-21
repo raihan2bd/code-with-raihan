@@ -238,6 +238,7 @@ a {
   margin: 35px;
   padding: 15px;
   color: #fff;
+  text-align: center;
 }
 
 .program-title::after {
@@ -309,6 +310,104 @@ a {
   margin: 35px 0;
 }
 
+/* Tutor Section */
+.tutor {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #fff;
+  padding: 25px 0;
+}
+
+.tutor-title {
+  color: #272a31;
+}
+
+.tutor-group {
+  display: flex;
+  list-style: none;
+  max-width: 800px;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.tutor-list {
+  display: flex;
+  padding: 10px;
+  box-shadow: 0 3px 7px #d3d3d3;
+  width: 100%;
+}
+
+.tutor-img {
+  position: relative;
+  min-width: 120px;
+  min-height: 120px;
+}
+
+.tiles {
+  width: 65px;
+  height: 65px;
+}
+
+.profile {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.tutor-img:hover>.profile {
+  transform: translate(-20px, -20px);
+}
+
+.tutor-info {
+  margin-left: 10px;
+  flex: 1;
+  align-self: center;
+}
+
+.tutor-position {
+  margin: 10px 0;
+  color: #ec5242;
+}
+
+.tutor-details {
+  font-size: 14px;
+  text-align: justify;
+}
+
+.see-more-tutors {
+  padding: 10px 15px;
+  border: 1px solid #272a31;
+  transition: all 0.1s ease-in-out;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 30px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.see-more-tutors:hover {
+  border-color: #ec5242;
+  color: #ec5242;
+  border-radius: 10px;
+}
+
+.see-more-tutors:active{
+  background: #d3d3d3;
+}
+#d-tutor-group {
+  display: none;
+}
+
+#m-tutor-group {
+  display: flex;
+}
+
 @media screen and (min-width: 768px) {
   .header {
     background: #fff;
@@ -362,6 +461,7 @@ a {
   .program-item {
     flex-direction: column;
     margin: 0;
+    margin: 0 3px;
   }
 
   .program-name {
@@ -370,5 +470,26 @@ a {
   .program-details {
     width: 100%;
     text-align: center;
+  }
+
+  /* Feature Tutors */
+  #m-tutor-group {
+    display: none;
+  }
+
+  #d-tutor-group {
+    display: flex;
+  }
+  .tutor-group{
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .tutor-list {
+    width: 50%;
+    margin: 25px 0;
+  }
+
+  .see-more-tutors {
+    display: none !important;
   }
 }
