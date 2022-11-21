@@ -408,6 +408,40 @@ a {
   display: flex;
 }
 
+/* Sponser Section */
+.sponser {
+  background: #272a31;
+  color: #d3d3d3;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.sponser>.program-title {
+  color: #d3d3d3;
+}
+
+.sponser-item-group {
+  display: flex;
+  max-width: 800px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  margin-bottom: 25px;
+}
+
+.sponser-item {
+  margin: 10px;
+}
+
+.sponser-item img{
+  width: 100%;
+  max-width: 90px;
+}
+
 @media screen and (min-width: 768px) {
   .header {
     background: #fff;
@@ -491,5 +525,22 @@ a {
 
   .see-more-tutors {
     display: none !important;
+  }
+
+  /* sponser section */
+  .sponser {
+    padding: 30px;
+  }
+
+  .sponser-item-group {
+    flex-wrap: nowrap;
+  }
+
+  .sponser-item {
+    margin: 10px;
+  }
+
+  .sponser-item img{
+    max-width: 150px;
   }
 }
