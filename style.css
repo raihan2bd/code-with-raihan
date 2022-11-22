@@ -168,7 +168,7 @@ a {
   min-height: 90vh;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url("../images/hero-bg.png");
+  background-image: url("./images/hero-bg.png");
   padding: 15px;
 }
 
@@ -179,7 +179,7 @@ a {
 .hero-title {
   font-size: 2rem;
   font-weight: 900;
-  background-image: url("../images/hero-title-bg.jpg");
+  background-image: url("./images/hero-title-bg.jpg");
   background-size: cover;
   background-attachment: fixed;
   color: transparent;
@@ -235,7 +235,7 @@ a {
   justify-content: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url("../images/program.png");
+  background-image: url("./images/program.png");
 }
 
 .program-title {

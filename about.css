@@ -1,6 +1,6 @@
 /* Headline Section */
 .about-headline {
-  background: url('../images/hero-bg-reverse.png');
+  background: url('./images/hero-bg-reverse.png');
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 60vh;
