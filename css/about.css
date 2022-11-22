@@ -1,6 +1,8 @@
 /* Headline Section */
 .about-headline {
   background: url('../images/hero-bg-reverse.png');
+  background-repeat: no-repeat;
+  background-size: cover;
   min-height: 60vh;
   display: flex;
   justify-content: center;
@@ -8,10 +10,11 @@
   flex-direction: column;
   background-color: #d6d6d6;
   padding: 20px;
+  overflow: hidden;
 }
 
 .headline-block {
-  max-width: 800px;
+  max-width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -25,12 +28,14 @@
   font-weight: 900;
   color: #ec5242;
   margin: 20px 0;
+  padding: 20px;
 }
 
 .headline-details {
   background: #fff;
   color: #272a31;
   padding: 25px;
+  max-width: 100%;
 }
 
 address {
@@ -103,6 +108,7 @@ address {
 }
 
 .past-item {
+  overflow: hidden;
   border-radius: 10px;
   padding: 15px;
   gap: 25px;
@@ -111,10 +117,42 @@ address {
   box-shadow: 0px 5px 10px rgba(88, 88, 88, 0.5);
 }
 
+.student-img {
+  position: relative;
+}
+
 .student-img img {
   width: 100%;
   height: 100%;
   overflow: hidden;
+}
+
+.student-bootcamp {
+  transform: translateX(100%);
+  position: absolute;
+  z-index: -1;
+  text-align: center;
+  left: 0;
+  bottom: 3px;
+  width: 100%;
+  height: 60px;
+  padding: 5%;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #fff;
+  background: rgba(236, 82, 66, 0.7);
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+}
+
+.past-item:hover .student-bootcamp {
+  transform: translateX(0);
+  z-index: 99;
+  opacity: 1;
+}
+
+.past-item:hover {
+  background: #fdbeb7;
 }
 
 .sudent-name {
@@ -127,7 +165,20 @@ address {
 }
 
 @media screen and (min-width: 768px){
+  .headline-block {
+    max-width: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 70px;
+    gap: 10px;
+  }
   .past-item-group {
     flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .past-item {
+    max-width: 47%;
   }
 }
