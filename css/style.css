@@ -7,6 +7,7 @@
 html, body {
   font-family: 'Lato', sans-serif;
   background: #d3d3d3;
+  scroll-behavior: smooth;
 }
 
 a {
@@ -578,6 +579,8 @@ a {
 
   .top-header-item-link {
     color: #fff;
+    font-size: 14px;
+    align-self: center;
   }
 
   .top-header-item-link:hover {
@@ -585,7 +588,7 @@ a {
   }
 
   .top-social-icon {
-    max-height: 20px;
+    max-height: 16px;
   }
 
   .navbar {
