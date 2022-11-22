@@ -4,7 +4,8 @@
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   font-family: 'Lato', sans-serif;
   background: #d3d3d3;
   scroll-behavior: smooth;
@@ -44,17 +45,15 @@ a {
   align-items: center;
   width: 100%;
   z-index: 100;
-  align-items: center;
   padding: 0 20px;
   justify-content: center;
-  box-shadow: 0px 3px 5px rgba(155, 155, 155, 0.3);
-  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 3px 5px rgba(155, 155, 155, 0.3);
+  background: rgba(255, 255, 255, 0.5);
 }
 
 .header-top {
   display: none;
 }
-
 
 /* Navigation Bar */
 .navbar {
@@ -100,7 +99,6 @@ a {
   display: none;
   min-height: 100vh;
   position: absolute;
-  background: #fff;
   flex-direction: column;
   background: rgba(236, 82, 66, 0.4);
   align-items: flex-start;
@@ -148,6 +146,10 @@ a {
   background: #fff !important;
 }
 
+.active {
+  color: #ec5242 !important;
+}
+
 .cross-icon {
   position: absolute;
   top: 25px;
@@ -158,8 +160,6 @@ a {
 /* End of navigation bar */
 
 /* Main Container */
-/* .container {
-} */
 
 /* Hero Section */
 .hero {
@@ -184,8 +184,6 @@ a {
   background-attachment: fixed;
   color: transparent;
   -webkit-background-clip: text;
-  background-clip: text;
-  -moz-background-clip: text;
 }
 
 .hero-details {
@@ -221,7 +219,7 @@ a {
 .btn-join:hover {
   border-radius: 10px;
   color: #fff;
-  background: #ec5242; 
+  background: #ec5242;
 }
 
 .btn-join:active {
@@ -297,12 +295,11 @@ a {
   margin: 10px 0;
   width: 40%;
   align-self: center;
-  overflow: wrap;
 }
 
 .program-details {
   color: #fff;
-  text-align:left;
+  text-align: left;
   width: 50%;
   align-self: center;
   font-size: 14px;
@@ -354,12 +351,11 @@ a {
   padding: 10px;
   box-shadow: 0 3px 7px #d3d3d3;
   width: 100%;
-  transition: transform 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .tutor-list:hover {
   background: #fcc2a7;
-  transform: scale(1.03);
 }
 
 .tutor-img {
@@ -421,9 +417,10 @@ a {
   border-radius: 10px;
 }
 
-.see-more-tutors:active{
+.see-more-tutors:active {
   background: #d3d3d3;
 }
+
 #d-tutor-group {
   display: none;
 }
@@ -443,7 +440,7 @@ a {
   flex-direction: column;
 }
 
-.sponser>.program-title {
+.sponser > .program-title {
   color: #d3d3d3;
 }
 
@@ -461,7 +458,7 @@ a {
   margin: 10px;
 }
 
-.sponser-item img{
+.sponser-item img {
   width: 100%;
   max-width: 90px;
 }
@@ -500,15 +497,15 @@ a {
   cursor: pointer;
   position: absolute;
   border-radius: 3px;
-  background: #ff0000;
-
+  background: #f00;
 }
 
 .cross-modal:hover {
   background: #ec5242;
 }
+
 .cross-modal:active {
-  background: #ff0000;
+  background: #f00;
   transform: translateY(-2px);
 }
 
@@ -524,7 +521,7 @@ a {
 
 .modal-details {
   background: #089b21;
-  color: #ffffff;
+  color: #fff;
   padding: 20px;
   border-radius: 10px;
   width: 80%;
@@ -533,8 +530,8 @@ a {
   justify-self: center;
 }
 
- /* Footer */
- .footer {
+/* Footer */
+.footer {
   background: #d6d6d6;
   color: #272a31;
   padding: 20px;
@@ -561,7 +558,7 @@ a {
   /* Header */
   .header {
     background: #fff;
-    padding:0;
+    padding: 0;
   }
 
   .header-top {
@@ -603,12 +600,15 @@ a {
     padding: 20px;
     justify-content: space-between;
   }
+
   .m-nav {
     display: none;
   }
+
   .d-nav {
     display: flex;
   }
+
   .menu-icon {
     display: none;
   }
@@ -629,7 +629,6 @@ a {
   /* Hero Section */
   .hero {
     padding: 70px 50px;
-
   }
 
   .hero-title {
@@ -645,7 +644,7 @@ a {
     max-width: 800px;
     margin: 0 auto;
   }
-  
+
   .program-item {
     flex-direction: column;
     margin: 0;
@@ -655,6 +654,7 @@ a {
   .program-name {
     width: 100%;
   }
+
   .program-details {
     width: 100%;
     text-align: center;
@@ -668,10 +668,12 @@ a {
   #d-tutor-group {
     display: flex;
   }
-  .tutor-group{
+
+  .tutor-group {
     flex-direction: row;
     flex-wrap: wrap;
   }
+
   .tutor-list {
     width: 47%;
     margin: 25px 5px;
@@ -689,12 +691,12 @@ a {
     margin: 35px 0;
     padding: 10px 15px;
   }
-  
+
   .btn-program:hover {
     background: initial;
     color: #ec5242;
   }
-  
+
   .btn-program:active {
     background: initial;
     color: #fff;
@@ -713,9 +715,10 @@ a {
     margin: 25px;
   }
 
-  .sponser-item img{
+  .sponser-item img {
     max-width: 150px;
   }
+
   /* Footer */
   .footer {
     padding: 30px;

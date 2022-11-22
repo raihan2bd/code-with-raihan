@@ -61,6 +61,7 @@ address {
   align-items: center;
   gap: 25px;
 }
+
 .logo-block .program-title {
   color: #272a31;
 }
@@ -74,9 +75,7 @@ address {
 .logo-img img {
   width: 100%;
   max-width: 500px;
- 
 }
-
 
 /* Past Section */
 
@@ -114,7 +113,7 @@ address {
   gap: 25px;
   display: flex;
   flex-direction: column;
-  box-shadow: 0px 5px 10px rgba(88, 88, 88, 0.5);
+  box-shadow: 0 5px 10px rgba(88, 88, 88, 0.5);
 }
 
 .student-img {
@@ -164,7 +163,7 @@ address {
   color: #d6d6d6;
 }
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 768px) {
   .headline-block {
     max-width: 800px;
     display: flex;
@@ -174,10 +173,12 @@ address {
     margin-top: 70px;
     gap: 10px;
   }
+
   .past-item-group {
     flex-direction: row;
     flex-wrap: wrap;
   }
+
   .past-item {
     max-width: 47%;
   }
