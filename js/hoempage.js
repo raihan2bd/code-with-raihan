@@ -1,3 +1,18 @@
+
+// this function will toggle article modal
+const toggleModal = () => {
+  gElem('.modal-article').classList.toggle('df')
+}
+
+// selecting program btn a modal
+const seeMoreProgram = gElemAll('.btn-modal');
+seeMoreProgram.forEach(btn => {
+  btn.addEventListener('click', toggleModal)
+})
+
+// close article modal using cross button
+gElem('.cross-modal').addEventListener('click', toggleModal)
+
 // Feature Turor Section
 
 // Fake Backend Tutor Data

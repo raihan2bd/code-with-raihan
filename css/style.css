@@ -303,11 +303,23 @@ a {
 }
 
 .btn-program {
-  text-decoration: underline;
+  width: 80%;
+  text-decoration: none;
   color: #fff;
-  background: initial;
-  border: none;
+  background: #ec5242;
   margin: 35px 0;
+  padding: 20px;
+  border: 1px solid #ec5242;
+}
+
+.btn-program:hover {
+  background: #fff;
+  color: #ec5242;
+}
+
+.btn-program:active {
+  background: #d6d6d6;
+  color: #272a31;
 }
 
 /* Tutor Section */
@@ -336,6 +348,12 @@ a {
   padding: 10px;
   box-shadow: 0 3px 7px #d3d3d3;
   width: 100%;
+  transition: transform 0.2s ease-in-out;
+}
+
+.tutor-list:hover {
+  background: #fcc2a7;
+  transform: scale(1.03);
 }
 
 .tutor-img {
@@ -358,7 +376,7 @@ a {
   transition: transform 0.2s ease-in-out;
 }
 
-.tutor-img:hover>.profile {
+.tutor-list:hover .profile {
   transform: translate(-20px, -20px);
 }
 
@@ -440,6 +458,73 @@ a {
 .sponser-item img{
   width: 100%;
   max-width: 90px;
+}
+
+/* Modal Article */
+.modal-article {
+  display: none;
+  background: rgba(39, 41, 48, 0.95);
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 200;
+}
+
+.modal-card {
+  position: relative;
+  display: flex;
+  min-height: 50vh;
+  min-width: 50vw;
+  background: #fff;
+  flex-direction: column;
+  gap: 20px;
+  border-radius: 20px;
+  margin: 10px;
+}
+
+.cross-modal {
+  top: 20px;
+  right: 20px;
+  padding: 5px;
+  cursor: pointer;
+  position: absolute;
+  border-radius: 3px;
+  background: #ff0000;
+
+}
+
+.cross-modal:hover {
+  background: #ec5242;
+}
+.cross-modal:active {
+  background: #ff0000;
+  transform: translateY(-2px);
+}
+
+.modal-title {
+  font-size: 2rem;
+  font-weight: 900;
+  margin-bottom: 20px;
+  color: #ec5242;
+  text-align: center;
+  padding: 20px;
+  border-bottom: 1px solid #d3d3d3;
+}
+
+.modal-details {
+  background: #089b21;
+  color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+  align-self: center;
+  min-height: 100px;
+  justify-self: center;
 }
 
  /* Footer */
@@ -535,12 +620,31 @@ a {
     flex-wrap: wrap;
   }
   .tutor-list {
-    width: 50%;
-    margin: 25px 0;
+    width: 47%;
+    margin: 25px 5px;
   }
 
   .see-more-tutors {
     display: none !important;
+  }
+
+  .btn-program {
+    text-decoration: underline;
+    color: #fff;
+    background: initial;
+    border: none;
+    margin: 35px 0;
+    padding: 10px 15px;
+  }
+  
+  .btn-program:hover {
+    background: initial;
+    color: #ec5242;
+  }
+  
+  .btn-program:active {
+    background: initial;
+    color: #fff;
   }
 
   /* sponser section */
