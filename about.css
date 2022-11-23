@@ -158,9 +158,9 @@ address {
   margin: 10px 0;
 }
 
-.footer {
-  background: #272a31;
-  color: #d6d6d6;
+
+.d-footer {
+  display: none !important;
 }
 
 @media screen and (min-width: 768px) {
@@ -181,5 +181,17 @@ address {
 
   .past-item {
     max-width: 47%;
+  }
+
+  .black-footer {
+    background: #272a31;
+    color: #d6d6d6;
+  }
+  .m-footer {
+    display: none;
+  }
+
+  .d-footer {
+    display: block !important;
   }
 }

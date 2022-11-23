@@ -548,6 +548,8 @@ a {
 
 .footer-block .logo {
   margin-right: 10px;
+  align-self: center;
+  justify-self: center;
 }
 
 .footer-block h3 {
