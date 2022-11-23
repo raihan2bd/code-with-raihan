@@ -36,10 +36,19 @@
   color: #272a31;
   padding: 25px;
   max-width: 100%;
+  border: 1px solid #d6d6d6;
+}
+
+.headline-block h5 {
+  font-weight: normal;
+  color: #272a31;
 }
 
 address {
   text-decoration: underline;
+  font-style: normal;
+  font-weight: bold;
+  margin-bottom: 20px;
 }
 
 /* About Logo */
@@ -97,65 +106,63 @@ address {
   padding: 15px;
 }
 
-.past-item-group {
+.past-bootcamp {
   display: flex;
   flex-direction: column;
   max-width: 800px;
   justify-content: center;
   align-items: center;
   gap: 20px;
+  list-style: none;
 }
 
-.past-item {
-  overflow: hidden;
-  border-radius: 10px;
-  padding: 15px;
-  gap: 25px;
-  display: flex;
-  flex-direction: column;
-  box-shadow: 0 5px 10px rgba(88, 88, 88, 0.5);
-}
-
-.student-img {
+.past-bootcamp-item {
   position: relative;
+  overflow: hidden;
 }
 
-.student-img img {
+.past-bootcamp-item img {
+  width: 100%;
+}
+
+
+
+/* .past-item:hover {
+  background: #fdbeb7;
+} */
+
+.bootcamp-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
   width: 100%;
   height: 100%;
-  overflow: hidden;
-}
-
-.student-bootcamp {
-  transform: translateX(100%);
-  position: absolute;
-  z-index: -1;
-  text-align: center;
+  top: 0;
   left: 0;
-  bottom: 3px;
-  width: 100%;
-  height: 60px;
-  padding: 5%;
+  color: #ffffff;
+  text-align: center;
+  background: rgba(216, 34, 34, 0.7);
+  padding: 20px;
+  transition: all 0.1s ease-in-out;
+}
+
+.bootcamp-year {
+  margin-bottom: 10px;
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+.bootcamp-info p {
   font-size: 1.2rem;
-  font-weight: 700;
-  color: #fff;
-  background: rgba(236, 82, 66, 0.7);
-  opacity: 0;
-  transition: all 0.2s ease-in-out;
+  line-height: 22px;
+  font-weight: 500;
 }
 
-.past-item:hover .student-bootcamp {
-  transform: translateX(0);
-  z-index: 99;
-  opacity: 1;
-}
-
-.past-item:hover {
-  background: #fdbeb7;
-}
-
-.sudent-name {
-  margin: 10px 0;
+.bootcamp-info:hover {
+  transform: scale(1.3);
+  background: rgba(216, 34, 34, 0.8);
 }
 
 
@@ -174,12 +181,16 @@ address {
     gap: 10px;
   }
 
-  .past-item-group {
+  .headline-title {
+    font-size: 4rem;
+  }
+
+  .past-bootcamp {
     flex-direction: row;
     flex-wrap: wrap;
   }
 
-  .past-item {
+  .past-bootcamp-item {
     max-width: 47%;
   }
 
