@@ -1,0 +1,202 @@
+/* Headline Section */
+.about-headline {
+  background: url('./images/hero-bg-reverse.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #d6d6d6;
+  padding: 20px;
+  overflow: hidden;
+}
+
+.headline-block {
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 70px;
+  gap: 10px;
+}
+
+.headline-title {
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: #ec5242;
+  margin: 20px 0;
+  padding: 20px;
+}
+
+.headline-details {
+  background: #fff;
+  color: #272a31;
+  padding: 25px;
+  max-width: 100%;
+  border: 1px solid #d6d6d6;
+}
+
+.headline-block h5 {
+  font-weight: normal;
+  color: #272a31;
+}
+
+address {
+  text-decoration: underline;
+  font-style: normal;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* About Logo */
+.about-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+  background: #fff;
+  flex-direction: column;
+  border-bottom: 1px solid #d6d6d6;
+}
+
+.logo-block {
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+
+.logo-block .program-title {
+  color: #272a31;
+}
+
+.logo-img {
+  padding: 35px;
+  border: 1px solid #d6d6d6;
+  margin-bottom: 25px;
+}
+
+.logo-img img {
+  width: 100%;
+  max-width: 500px;
+}
+
+/* Past Section */
+
+.about-past {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  padding: 30px 20px;
+}
+
+.about-past .program-title {
+  color: #272a31;
+}
+
+.about-past-details {
+  margin: 20px 0;
+  padding: 15px;
+}
+
+.past-bootcamp {
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  list-style: none;
+}
+
+.past-bootcamp-item {
+  position: relative;
+  overflow: hidden;
+}
+
+.past-bootcamp-item img {
+  width: 100%;
+}
+
+.bootcamp-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  color: #fff;
+  text-align: center;
+  background: rgba(216, 34, 34, 0.7);
+  padding: 20px;
+  transition: all 0.1s ease-in-out;
+}
+
+.bootcamp-year {
+  margin-bottom: 10px;
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+.bootcamp-info p {
+  font-size: 1.2rem;
+  line-height: 22px;
+  font-weight: 500;
+}
+
+.bootcamp-info:hover {
+  transform: scale(1.3);
+  background: rgba(216, 34, 34, 0.8);
+}
+
+.d-footer {
+  display: none !important;
+}
+
+@media screen and (min-width: 768px) {
+  .headline-block {
+    max-width: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 70px;
+    gap: 10px;
+  }
+
+  .headline-title {
+    font-size: 4rem;
+  }
+
+  .past-bootcamp {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .past-bootcamp-item {
+    max-width: 47%;
+  }
+
+  .black-footer {
+    background: #272a31;
+    color: #d6d6d6;
+  }
+
+  .m-footer {
+    display: none;
+  }
+
+  .d-footer {
+    display: block !important;
+  }
+}
