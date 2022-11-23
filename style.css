@@ -170,10 +170,17 @@ a {
   background-repeat: no-repeat;
   background-image: url("./images/hero-bg.png");
   padding: 15px;
+  align-items: center;
+}
+
+.hero-block {
+  max-width: 800px;
+  margin-top: 70px;
 }
 
 .hero-greeting {
-  margin-top: 70px;
+  font-size: 20px;
+  margin-bottom: 10px;
 }
 
 .hero-title {
@@ -187,14 +194,14 @@ a {
 }
 
 .hero-details {
-  background: rgba(201, 201, 201, 0.5);
+  background: #f7f7f7;
+  border: 4px solid #fff;
   color: #272a31;
-  border-radius: 10px;
-  padding: 10px;
+  line-height: 30px;
+  padding: 15px;
   margin: 10px 0;
   text-align: justify;
   max-width: 800px;
-  box-shadow: 0 3px 10px #b1b1b1;
 }
 
 .hero-deadline-title {
@@ -204,27 +211,8 @@ a {
   color: #616161;
 }
 
-.btn-join {
-  border: 3px solid #ec5242;
-  background: #ec5242;
-  color: #fff;
-  font-size: 1.2rem;
-  font-weight: bold;
-  max-width: 300px;
-  margin: 10px 0;
-  padding: 15px 20px;
-  transition: all 0.2s ease-in-out;
-}
-
-.btn-join:hover {
-  border-radius: 10px;
-  color: #fff;
-  background: #ec5242;
-}
-
-.btn-join:active {
-  background: #d6d6d6;
-  color: #ec5242;
+.hero-deadline-details {
+  font-size: 16px;
 }
 
 /* Program Section */
@@ -628,9 +616,14 @@ a {
     margin-top: 70px;
   }
 
+
   /* Hero Section */
   .hero {
-    padding: 70px 50px;
+    padding: 70px 10px;
+  }
+
+  .hero-greeting {
+    font-size: 28px;
   }
 
   .hero-title {
