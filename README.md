@@ -5,13 +5,8 @@
 > The theme about this project is a online full stack webdevelopment bootcamp.
 >
 
-    ### Live Preview of my project in a desktop browser.
-> <p align="center">
-> <img width="375" src="https://api.apify.com/v2/key-value-stores/uAnL1Y3lgKKWOC5CA/records/raihan2bd.github.io-scroll_lossy-comp">
-</p>
-
-    ### Live Preview of my project in a mobile browser.
-> <p align="center"><img width="375" src="https://api.apify.com/v2/key-value-stores/RqThuApZxJUh3KIx7/records/raihan2bd.github.io-scroll_lossy-comp">
+ ### ***Live Preview of my project***.
+> <p align="center"><img src="https://user-images.githubusercontent.com/35267447/207364049-09b572c6-0395-4123-a3cc-e361d8fa72ea.png">
 > </p>
 
 ## Built With
